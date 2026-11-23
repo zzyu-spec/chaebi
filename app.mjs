@@ -1,4 +1,4 @@
-import {icon} from './icons.mjs';
+import {icon} from './icons.mjs?v=tote';
 import {iso,day,shift,occurrences,preserve,remove} from './engine.mjs';
 const $=id=>document.getElementById(id),today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;},KEY='today-ready-v1';
 let db={items:[],checks:{},overrides:{},history:{}},selected=today(),mainMonth=selected.slice(0,7),filter='전체',editId=null,deleteId=null,draft,chooseMonth;
